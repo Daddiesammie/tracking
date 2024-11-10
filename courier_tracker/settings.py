@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'site_settings',
     'ckeditor',
     'contact',
+    'livechat',
 ]
 
 MIDDLEWARE = [
