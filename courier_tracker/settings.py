@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'tracking',
     'site_settings',
     'ckeditor',
+    'contact',
 ]
 
 MIDDLEWARE = [
