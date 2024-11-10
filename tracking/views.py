@@ -105,14 +105,18 @@ def mark_notification_as_read(request, notification_id):
 
 
 def home(request):
+    pricing_plans = PricingPlan.objects.all()
+    context = {'pricing_plans': pricing_plans}
+
     if request.method == 'POST':
         tracking_number = request.POST.get('tracking_number')
         try:
             product = Product.objects.get(tracking_number=tracking_number)
             return render(request, 'tracking/tracking_result.html', {'product': product})
         except Product.DoesNotExist:
-            return render(request, 'tracking/home.html', {'error': 'Invalid tracking number'})
-    return render(request, 'tracking/home.html')
+            context['error'] = 'Invalid tracking number'
+
+    return render(request, 'tracking/home.html', context)
 
 def tracking_detail(request, tracking_number):
     try:

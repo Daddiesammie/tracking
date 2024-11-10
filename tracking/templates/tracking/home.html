@@ -1,5 +1,5 @@
 {% extends 'tracking/base.html' %}
-
+{% load custom_filters %}
 {% block content %}
 <!-- Hero Section with Tracking -->
 <div class="relative bg-indigo-900 text-white py-20">
@@ -135,72 +135,26 @@
         <p class="text-gray-600 text-center mb-12">Choose the perfect shipping solution for your needs</p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Standard Shipping -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold text-center mb-4">Standard</h3>
-                    <div class="text-center mb-8">
-                        <span class="text-4xl font-bold">$9.99</span>
-                        <span class="text-gray-600">/package</span>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>3-5 business days</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Package tracking</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Up to 5kg weight</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Basic insurance</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="p-4 bg-gray-50">
-                    <button class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition">
-                        Choose Plan
-                    </button>
-                </div>
-            </div>
-
-            <!-- Express Shipping -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform scale-105">
+            {% for plan in pricing_plans %}
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 {% if forloop.counter == 2 %}transform scale-105{% endif %}">
+                {% if forloop.counter == 2 %}
                 <div class="bg-indigo-600 text-white py-2 text-center text-sm">
                     MOST POPULAR
                 </div>
+                {% endif %}
                 <div class="p-8">
-                    <h3 class="text-2xl font-bold text-center mb-4">Express</h3>
+                    <h3 class="text-2xl font-bold text-center mb-4">{{ plan.name }}</h3>
                     <div class="text-center mb-8">
-                        <span class="text-4xl font-bold">$19.99</span>
+                        <span class="text-4xl font-bold">${{ plan.price }}</span>
                         <span class="text-gray-600">/package</span>
                     </div>
                     <ul class="space-y-4">
+                        {% for feature in plan.description|split:',' %}
                         <li class="flex items-center">
                             <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>1-2 business days</span>
+                            <span>{{ feature|strip }}</span>
                         </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Real-time tracking</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Up to 10kg weight</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Premium insurance</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Priority handling</span>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <div class="p-4 bg-gray-50">
@@ -209,44 +163,7 @@
                     </button>
                 </div>
             </div>
-
-            <!-- Premium Shipping -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold text-center mb-4">Premium</h3>
-                    <div class="text-center mb-8">
-                        <span class="text-4xl font-bold">$29.99</span>
-                        <span class="text-gray-600">/package</span>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Next day delivery</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>24/7 priority support</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Up to 20kg weight</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Full insurance coverage</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Dedicated agent</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="p-4 bg-gray-50">
-                    <button class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition">
-                        Choose Plan
-                    </button>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
