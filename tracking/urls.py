@@ -14,5 +14,6 @@ urlpatterns = [
     path('profile/', views.profile, name='profile'),
     path('logout/', views.logout_view, name='logout'),
     path('add-product/', views.add_product, name='add_product'),
+    path('pricing/', views.pricing_view, name='pricing'),
     path('mark-notification-as-read/<int:notification_id>/', views.mark_notification_as_read, name='mark_notification_as_read'),
 ]

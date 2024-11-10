@@ -9,6 +9,14 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+class PricingPlan(models.Model):
+    name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    description = models.TextField(help_text="Enter features separated by commas")
+
+    def __str__(self):
+        return f"{self.name} - ${self.price}"
+
 class Product(models.Model):
     STATUS_CHOICES = [
         ('pending', 'Pending'),
@@ -25,6 +33,7 @@ class Product(models.Model):
     current_status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    pricing_plan = models.ForeignKey(PricingPlan, on_delete=models.SET_NULL, null=True)
 
     def save(self, *args, **kwargs):
         if not self.tracking_number:
@@ -115,7 +124,7 @@ class Notification(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.message[:50]}"
-    
+
 class BitcoinWallet(models.Model):
     address = models.CharField(max_length=100, unique=True)
     is_active = models.BooleanField(default=True)
@@ -126,7 +135,7 @@ class BitcoinWallet(models.Model):
 class BitcoinPayment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     product = models.OneToOneField(Product, on_delete=models.CASCADE)
-    payment_proof = models.TextField()
+    payment_proof = models.ImageField(upload_to='payment_proofs/')
     is_approved = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

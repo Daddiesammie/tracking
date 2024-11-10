@@ -1,8 +1,9 @@
 from django.contrib import admin
-from .models import Product, TrackingStatus, Notification, BitcoinWallet, BitcoinPayment
+from .models import PricingPlan, Product, TrackingStatus, Notification, BitcoinWallet, BitcoinPayment
 
 admin.site.register(BitcoinWallet)
 admin.site.register(BitcoinPayment)
+admin.site.register(PricingPlan)
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):

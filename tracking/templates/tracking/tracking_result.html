@@ -1,6 +1,26 @@
 {% extends 'tracking/base.html' %}
 
 {% block content %}
+
+<style>
+    @keyframes drawPath {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    .flight-path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: drawPath 15s linear infinite;
+    }
+
+    #airplane {
+        transition: transform 0.1s linear;
+    }
+</style>
+
+
 <div class="container mx-auto px-4 py-8 animate-fade-in">
     <!-- Tracking Header -->
     <div class="max-w-4xl mx-auto bg-gradient-to-r from-indigo-900 to-indigo-700 rounded-xl shadow-lg p-8 mb-8 transform hover:scale-[1.02] transition-all duration-300">
@@ -101,6 +121,67 @@
         </div>
     </div>
 
+
+
+
+    <div class="container mx-auto">
+        <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <div class="relative h-48">
+                <!-- SVG Container -->
+                <svg class="w-full h-full" viewBox="0 0 800 160">
+                    <!-- Dotted Background Path -->
+                    <path 
+                        d="M50,80 Q400,10 750,80" 
+                        stroke="#E5E7EB" 
+                        stroke-width="2" 
+                        stroke-dasharray="5,5" 
+                        fill="none" 
+                    />
+                    <!-- Animated Path -->
+                    <path 
+                        id="flightPath"
+                        class="flight-path" 
+                        d="M50,80 Q400,10 750,80" 
+                        stroke="#4F46E5" 
+                        stroke-width="2" 
+                        fill="none" 
+                    />
+                    <!-- Origin Point -->
+                    <circle cx="50" cy="80" r="6" fill="#4F46E5" />
+                    <!-- Destination Point -->
+                    <circle cx="750" cy="80" r="6" fill="#4F46E5" />
+                </svg>
+
+                <!-- Plane Icon -->
+                <div id="airplane" class="absolute top-0 left-0 text-2xl text-indigo-600 transform -translate-y-1/2 -translate-x-1/2">
+                    <i class="fas fa-plane"></i>
+                </div>
+
+                <!-- Location Labels -->
+                <div class="absolute bottom-0 left-12 text-sm font-medium text-gray-600">
+                    Origin
+                </div>
+                <div class="absolute bottom-0 right-12 text-sm font-medium text-gray-600">
+                    Destination
+                </div>
+            </div>
+
+            <!-- Shipment Info -->
+            <div class="mt-4 grid grid-cols-2 gap-4">
+                <div class="text-center">
+                    <div class="text-sm text-gray-500">From</div>
+                    <div class="font-medium text-indigo-900">Shipping Center</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-sm text-gray-500">To</div>
+                    <div class="font-medium text-indigo-900">Destination</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- Map Section -->
     <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 mb-8">
         <h3 class="text-xl font-semibold text-indigo-900 mb-6">Shipment Route</h3>
@@ -171,6 +252,36 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const airplane = document.getElementById('airplane');
+        const flightPath = document.getElementById('flightPath');
+        
+        function animateAirplane() {
+            const pathLength = flightPath.getTotalLength();
+            const duration = 200000; // 15 seconds
+            
+            function update(timestamp) {
+                const elapsed = (timestamp % duration) / duration;
+                const point = flightPath.getPointAtLength(elapsed * pathLength);
+                
+                // Calculate rotation based on the path
+                const nextPoint = flightPath.getPointAtLength((elapsed + 0.01) * pathLength);
+                const angle = Math.atan2(nextPoint.y - point.y, nextPoint.x - point.x) * 180 / Math.PI;
+                
+                airplane.style.transform = `translate(${point.x}px, ${point.y}px) rotate(${angle + 25}deg)`;
+                requestAnimationFrame(update);
+            }
+            
+            requestAnimationFrame(update);
+        }
+        
+        animateAirplane();
+    });
+    </script>
+
+
 
 <style>
 .marker-pin {

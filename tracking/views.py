@@ -10,9 +10,10 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.db.models import Count
-from .models import Product, Notification
+from .models import PricingPlan, Product, Notification
 from .forms import ProductForm, BitcoinPaymentForm
 from .models import Product, BitcoinPayment, BitcoinWallet
+from django.db.models import Sum
 
 @login_required
 def profile(request):
@@ -59,6 +60,14 @@ def dashboard(request):
     # Get unread notifications
     notifications = Notification.objects.filter(user=request.user, is_read=False)
     
+    # Calculate total value of approved products
+    total_value = Product.objects.filter(
+        user=request.user,
+        bitcoinpayment__is_approved=True
+    ).aggregate(
+        total=Sum('pricing_plan__price')
+    )['total'] or 0
+    
     if request.method == 'POST':
         tracking_number = request.POST.get('tracking_number')
         try:
@@ -70,6 +79,7 @@ def dashboard(request):
                 'in_transit_count': in_transit_count,
                 'delivered_count': delivered_count,
                 'notifications': notifications,
+                'total_value': total_value,
                 'error': 'Invalid tracking number'
             }
             return render(request, 'tracking/dashboard.html', context)
@@ -79,6 +89,7 @@ def dashboard(request):
         'in_transit_count': in_transit_count,
         'delivered_count': delivered_count,
         'notifications': notifications,
+        'total_value': total_value,
     }
     return render(request, 'tracking/dashboard.html', context)
 
@@ -125,20 +136,25 @@ def download_pdf(request, tracking_number):
 def add_product(request):
     if request.method == 'POST':
         product_form = ProductForm(request.POST)
-        payment_form = BitcoinPaymentForm(request.POST)
+        payment_form = BitcoinPaymentForm(request.POST, request.FILES)
         
         if product_form.is_valid() and payment_form.is_valid():
-            product = product_form.save(commit=False)
-            product.user = request.user
-            product.save()
-            
-            payment = payment_form.save(commit=False)
-            payment.product = product
-            payment.user = request.user
-            payment.save()
-            
-            messages.success(request, f'Product created successfully. Tracking number: {product.tracking_number}. Payment proof submitted for review.')
-            return redirect('tracking:dashboard')
+            try:
+                product = product_form.save(commit=False)
+                product.user = request.user
+                product.save()
+                
+                payment = payment_form.save(commit=False)
+                payment.product = product
+                payment.user = request.user
+                payment.save()
+                
+                messages.success(request, f'Product created successfully. Tracking number: {product.tracking_number}. Payment proof submitted for review.')
+                return redirect('tracking:dashboard')
+            except Exception as e:
+                messages.error(request, f'Error creating product: {str(e)}')
+        else:
+            messages.error(request, 'Please correct the errors in the form.')
     else:
         product_form = ProductForm()
         payment_form = BitcoinPaymentForm()
@@ -148,6 +164,10 @@ def add_product(request):
     context = {
         'product_form': product_form,
         'payment_form': payment_form,
-        'bitcoin_wallet': bitcoin_wallet.address if bitcoin_wallet else None
+        'bitcoin_wallet': bitcoin_wallet.address if bitcoin_wallet else None,
     }
     return render(request, 'tracking/add_product.html', context)
+
+def pricing_view(request):
+    pricing_plans = PricingPlan.objects.all()
+    return render(request, 'tracking/pricing.html', {'pricing_plans': pricing_plans})
