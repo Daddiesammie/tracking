@@ -1,0 +1,10 @@
+{% extends "tracking/base.html" %}
+
+{% block title %}{{ title }} - {{ site_settings.site_name }}{% endblock %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<div class="static-content">
+    {{ content|safe }}
+</div>
+{% endblock %}

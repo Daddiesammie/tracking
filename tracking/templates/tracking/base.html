@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="{{ site_settings.meta_description }}">
+    <meta name="keywords" content="{{ site_settings.meta_keywords }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site_settings.site_name }}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <!-- Top Bar -->
+    <div class="bg-indigo-900 text-white text-sm py-2">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-phone mr-2"></i>{{ site_settings.phone }}</span>
+                <span><i class="fas fa-envelope mr-2"></i>{{ site_settings.email }}</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-indigo-200">Track Shipment</a>
+                <a href="#" class="hover:text-indigo-200">Support</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-indigo-900">
+                        <a href="{% url 'tracking:home' %}" class="flex items-center">
+                            <i class="fas fa-truck-fast mr-2"></i>
+                            Courier Tracker
+                        </a>
+                    </h1>
+                </div>
+
+                <!-- Main Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="{% url 'tracking:home' %}" class="text-gray-700 hover:text-indigo-900 transition">Home</a>
+                    <a href="/#services" class="text-gray-700 hover:text-indigo-900 transition">Services</a>
+                    <a href="/#pricing" class="text-gray-700 hover:text-indigo-900 transition">Pricing</a>
+                    <a href="{% url 'site_settings:about_us' %}" class="text-gray-700 hover:text-indigo-900 transition">About Us</a>
+                    <a href="#" class="text-gray-700 hover:text-indigo-900 transition">Contact</a>
+                    
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'tracking:dashboard' %}" class="text-gray-700 hover:text-indigo-900 transition">Dashboard</a>
+                        <div class="relative group">
+                            <button class="flex items-center text-gray-700 hover:text-indigo-900 transition">
+                                <i class="fas fa-user-circle mr-2"></i>
+                                {{ user.username }}
+                                <i class="fas fa-chevron-down ml-2"></i>
+                            </button>
+                            <div class="absolute right-0 w-48 py-2 mt-2 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
+                                <a href="{% url 'tracking:profile' %}" class="block px-4 py-2 text-gray-800 hover:bg-indigo-50 hover:text-indigo-900">
+                                    <i class="fas fa-user mr-2"></i>Profile
+                                </a>
+                                <a href="{% url 'tracking:logout' %}" class="block px-4 py-2 text-gray-800 hover:bg-indigo-50 hover:text-indigo-900">
+                                    <i class="fas fa-sign-out-alt mr-2"></i>Logout
+                                </a>
+                            </div>
+                        </div>
+                    {% else %}
+                        <a href="{% url 'tracking:login' %}" class="text-indigo-900 hover:text-indigo-700 transition">Login</a>
+                        <a href="{% url 'tracking:register' %}" class="bg-indigo-900 text-white px-6 py-2 rounded-lg hover:bg-indigo-800 transition">Register</a>
+                    {% endif %}
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden" x-data="{ isOpen: false }">
+                    <button @click="isOpen = !isOpen" class="text-gray-700 hover:text-indigo-900">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                
+                    <!-- Mobile Menu -->
+                    <div x-show="isOpen" 
+                         @click.away="isOpen = false"
+                         x-transition:enter="transition ease-out duration-200"
+                         x-transition:enter-start="opacity-0 transform scale-90"
+                         x-transition:enter-end="opacity-100 transform scale-100"
+                         x-transition:leave="transition ease-in duration-100"
+                         x-transition:leave-start="opacity-100 transform scale-100"
+                         x-transition:leave-end="opacity-0 transform scale-90"
+                         class="absolute top-20 left-0 right-0 bg-white shadow-lg p-4 z-50">
+                        <div class="flex flex-col space-y-4">
+                            <a href="{% url 'tracking:home' %}" class="text-gray-700 hover:text-indigo-900 transition">Home</a>
+                            <a href="/#services" class="text-gray-700 hover:text-indigo-900 transition">Services</a>
+                            <a href="#" class="text-gray-700 hover:text-indigo-900 transition">Pricing</a>
+                            <a href="{% url 'site_settings:about_us' %}" class="text-gray-700 hover:text-indigo-900 transition">About Us</a>
+                            <a href="#" class="text-gray-700 hover:text-indigo-900 transition">Contact</a>
+                            
+                            {% if user.is_authenticated %}
+                                <a href="{% url 'tracking:dashboard' %}" class="text-gray-700 hover:text-indigo-900 transition">Dashboard</a>
+                                <a href="{% url 'tracking:profile' %}" class="text-gray-700 hover:text-indigo-900 transition">Profile</a>
+                                <a href="{% url 'tracking:logout' %}" class="text-gray-700 hover:text-indigo-900 transition">Logout</a>
+                            {% else %}
+                                <a href="{% url 'tracking:login' %}" class="text-gray-700 hover:text-indigo-900 transition">Login</a>
+                                <a href="{% url 'tracking:register' %}" class="bg-indigo-900 text-white px-4 py-2 rounded-lg hover:bg-indigo-800 transition text-center">Register</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto mt-8 px-4">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-indigo-900 text-white mt-16">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About Section -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">About Us</h3>
+                    <p class="text-indigo-200">Providing reliable and efficient courier services worldwide. Track your packages in real-time with our advanced tracking system.</p>
+                </div>
+    
+                <!-- Quick Links Section -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-indigo-200 hover:text-white transition">Track Package</a></li>
+                        <li><a href="#" class="text-indigo-200 hover:text-white transition">Shipping Rates</a></li>
+                        <li><a href="#" class="text-indigo-200 hover:text-white transition">Locations</a></li>
+                        <li><a href="#" class="text-indigo-200 hover:text-white transition">Career</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Services Section -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-indigo-200 hover:text-white transition">Express Delivery</a></li>
+                        <li><a href="#services" class="text-indigo-200 hover:text-white transition">International Shipping</a></li>
+                        <li><a href="#services" class="text-indigo-200 hover:text-white transition">Cargo Services</a></li>
+                        <li><a href="#services" class="text-indigo-200 hover:text-white transition">Business Solutions</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Section -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-indigo-200">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>{{ site_settings.address }}</li>
+                        <li><i class="fas fa-phone mr-2"></i>{{ site_settings.phone }}</li>
+                        <li><i class="fas fa-envelope mr-2"></i>{{ site_settings.email }}</li>
+                    </ul>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="{{ site_settings.facebook }}" class="text-indigo-200 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="{{ site_settings.twitter }}" class="text-indigo-200 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="{{ site_settings.linkedin }}" class="text-indigo-200 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="{{ site_settings.instagram }}" class="text-indigo-200 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Legal Section -->
+            <div class="border-t border-indigo-800 mt-8 pt-8">
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <a href="{% url 'site_settings:terms_and_conditions' %}" class="text-indigo-200 hover:text-white transition">Terms & Conditions</a>
+                    <span class="text-indigo-200">|</span>
+                    <a href="{% url 'site_settings:privacy_policy' %}" class="text-indigo-200 hover:text-white transition">Privacy Policy</a>
+                    <span class="text-indigo-200">|</span>
+                    <a href="{% url 'site_settings:disclaimer' %}" class="text-indigo-200 hover:text-white transition">Disclaimer</a>
+                </div>
+                <div class="text-center text-indigo-200">
+                    <p>&copy; 2024 {{ site_settings.site_name }}. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

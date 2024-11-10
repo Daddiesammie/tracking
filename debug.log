@@ -1,0 +1,850 @@
+Watching for file changes with StatReloader
+No email associated with user Donald
+No email associated with user Donald
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/email_utils.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Saving TrackingStatus 3
+Status changed for TrackingStatus 3. Sending email and creating notification.
+Attempting to send email for TrackingStatus 3
+No email associated with user Donald
+Saving TrackingStatus None
+Status changed for TrackingStatus 4. Sending email and creating notification.
+Attempting to send email for TrackingStatus 4
+No email associated with user Donald
+Watching for file changes with StatReloader
+Internal Server Error: /admin/site_settings/sitesettings/add/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1073, in render
+    return render_value_in_context(output, context)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1050, in render_value_in_context
+    value = str(value)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/forms/utils.py", line 79, in __str__
+    return self.as_widget()
+           ~~~~~~~~~~~~~~^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/forms/boundfield.py", line 108, in as_widget
+    return widget.render(
+           ~~~~~~~~~~~~~^
+        name=self.html_initial_name if only_initial else self.html_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        renderer=self.form.renderer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/forms/widgets.py", line 279, in render
+    return self._render(self.template_name, context, renderer)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/forms/widgets.py", line 284, in _render
+    return mark_safe(renderer.render(template_name, context))
+                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/forms/renderers.py", line 28, in render
+    template = self.get_template(template_name)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/forms/renderers.py", line 34, in get_template
+    return self.engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 81, in get_template
+    reraise(exc, self)
+    ~~~~~~~^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/courier_tracker/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py", line 103, in home
+    return render(request, 'tracking/home.html')
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'about' not found. 'about' is not a valid view function or pattern name.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py", line 103, in home
+    return render(request, 'tracking/home.html')
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'about_us' not found. 'about_us' is not a valid view function or pattern name.
+Not Found: /about-us/
+Forbidden (Permission denied): /admin/site_settings/sitesettings/add/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1836, in _changeform_view
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+Forbidden (Permission denied): /admin/site_settings/sitesettings/add/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1836, in _changeform_view
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+Forbidden (Permission denied): /admin/site_settings/sitesettings/add/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1836, in _changeform_view
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/site_settings/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Forbidden (Permission denied): /admin/site_settings/sitesettings/add/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1836, in _changeform_view
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+Forbidden (Permission denied): /admin/site_settings/sitesettings/add/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1836, in _changeform_view
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+Watching for file changes with StatReloader
+Forbidden (Permission denied): /admin/site_settings/sitesettings/add/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/admin/options.py", line 1836, in _changeform_view
+    raise PermissionDenied
+django.core.exceptions.PermissionDenied
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py", line 103, in home
+    return render(request, 'tracking/home.html')
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1067, in render
+    output = self.filter_expression.resolve(context)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 718, in resolve
+    obj = self.var.resolve(context)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/db/models/fields/files.py", line 69, in url
+    self._require_file()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/db/models/fields/files.py", line 44, in _require_file
+    raise ValueError(
+        "The '%s' attribute has no file associated with it." % self.field.name
+    )
+ValueError: The 'favicon' attribute has no file associated with it.
+Internal Server Error: /about-us/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/site_settings/views.py", line 19, in about_us
+    return static_page(request, 'about_us')
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/site_settings/views.py", line 11, in static_page
+    return render(request, 'site_settings/static_page.html', {
+        'title': title,
+        'content': content,
+    })
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py", line 103, in home
+    return render(request, 'tracking/home.html')
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'terms' not found. 'terms' is not a valid view function or pattern name.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py", line 103, in home
+    return render(request, 'tracking/home.html')
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'privacy' not found. 'privacy' is not a valid view function or pattern name.
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /add-product/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py", line 138, in add_product
+    return render(request, 'tracking/add_product.html', {'form': form})
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 489, in parse
+    raise self.error(token, e)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 487, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 701, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 611, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'addclass'
+Watching for file changes with StatReloader
+Internal Server Error: /add-product/
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/contrib/auth/decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py", line 138, in add_product
+    return render(request, 'tracking/add_product.html', {'form': form})
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 109, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/env/lib/python3.13/site-packages/django/template/backends/django.py", line 130, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+Saving TrackingStatus None
+Status changed for TrackingStatus 5. Sending email and creating notification.
+Attempting to send email for TrackingStatus 5
+Email sent successfully for TrackingStatus 5
+Watching for file changes with StatReloader
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/forms.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/edikeifeanyisamuel/Desktop/non_api_projects/tracking/courier_tracker/tracking/admin.py changed, reloading.
+Watching for file changes with StatReloader
+Saving TrackingStatus None
+Status changed for TrackingStatus 6. Sending email and creating notification.
+Attempting to send email for TrackingStatus 6
+Email sent successfully for TrackingStatus 6
+Watching for file changes with StatReloader
